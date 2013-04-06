@@ -37,7 +37,7 @@ set :deploy_to, "/usr/#{username}/sites/#{application}/#{rails_env}"    ### acti
 
 set :scm, "git"
 set :repository, "git@github.com:aghyad/blog.git"
-set :branch, "dev"
+set :branch, "master"
 set :scm_verbose, true
 
 namespace :deploy do
