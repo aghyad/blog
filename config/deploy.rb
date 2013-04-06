@@ -26,7 +26,7 @@ role :web, "198.211.106.13"                     # Your HTTP server, Apache/etc
 role :app, "198.211.106.13"                     # This may be the same as your `Web` server
 role :db,  "198.211.106.13", :primary => true   # This is where Rails migrations will run
 
-set :application, "website"
+set :application, "blog"
 set :user, "root"
 #set :deploy_via, :remote_cache
 set :deploy_via, :checkout
@@ -36,7 +36,7 @@ set :username, "deployer"
 set :deploy_to, "/usr/#{username}/sites/#{application}/#{rails_env}"    ### activate for production deployment
 
 set :scm, "git"
-set :repository, "git@github.com:aghyad/website.git"
+set :repository, "git@github.com:aghyad/blog.git"
 set :branch, "dev"
 set :scm_verbose, true
 
